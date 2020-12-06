@@ -1,6 +1,6 @@
 import React from 'react';
 import Number from './Number';
-
+import Header from './components/Header';
 
 
 class Main extends React.Component{
@@ -63,7 +63,9 @@ class Main extends React.Component{
     }
     render(){
         return(
+            
             <>
+                <Header/>
                 <Number
                     count = {this.state.count}
                     add ={()=>{this.addCount()}}

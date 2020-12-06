@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from './Image';
 
+
 const Number = (props) => {
     console.log(props.count);
     console.log(props.isFinished);
@@ -12,13 +13,19 @@ const Number = (props) => {
                 isSmile = {props.isSmile}
             />
             {(() => {
-                    if (props.isFinished === false) {
-                        return <h2>{props.count}</h2>
-                    } else if((props.isFinished === true)){
-                        return <h2>ありがとうございました！！！</h2>
+                    if (props.isFinished === true && props.count >40) {
+                        return <p></p>
+                    }else if(props.isSmile === true){
+                        return <p className = "count smileCount">{props.count}</p>
+                    }else if(props.isSmile === false){
+                        return  <p className = "count noSmileCount">{props.count}</p>
                     }
                 })()}
-            <br/>
+            {(() => {
+                    if (props.isFinished === true) {
+                        return <p className = "count smileCount">ありがとうございました！！！</p>
+                    }
+                })()}
             <div className="boxInner">
                 {(() => {
                     if (props.isFinished === false) {

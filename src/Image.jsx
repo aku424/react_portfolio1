@@ -1,18 +1,17 @@
 import React from 'react';
 
-
 const Image = (props) => {
     console.log(props.isSmile);
     return(
         <>
-            <div className="img">
+            <div>
                 {(() => {
                     if (props.count === 41) {
-                        return <span>オモロー</span>
+                        return <p className = "imageText">オモロー</p>
                     } else if(props.isSmile === true) {
-                        return <span>3で割れる</span>
+                        return <p className = "imageText">アホ</p>
                     }else{
-                        return <span>3で割れない</span>
+                        return <p className = "imageText">普通</p>
                     }
                 })()}
             </div> 
