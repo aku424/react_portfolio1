@@ -64,8 +64,8 @@ class Game extends React.Component{
         return(
             
             <>
-                <h1>世界のナベアス</h1>
-                <p>〜今は無き世界のナベアスのオモロー〜</p>
+                <h3 className = "gameTitle">世界のナベアツ</h3>
+                <p className = "gameText">〜今は無き世界のナベアスのオモロー〜</p>
                 <Number
                     count = {this.state.count}
                     add ={()=>{this.addCount()}}

@@ -7,7 +7,9 @@ const About = (props)=>{
         // aboutページ
         <section className = "container about">
             <div className="sectionTitleBox">
-                <h2 className = "sectionTitle">About</h2>
+                <div className="sectionBg">
+                    <h2 className = "sectionTitle">About</h2>
+                </div>
             </div>
             <div className="inner">
                 <div className="aboutFirst">
@@ -58,7 +60,7 @@ const About = (props)=>{
                     </article>
                 </div>
                 <div className = "nexPageBox">
-                    <Link className="nexPage" to="/works/">Works</Link>
+                    <Link className="nexPage" to="/works/">Next page is works<span></span></Link>
                 </div>
             </div>
         </section>

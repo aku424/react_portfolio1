@@ -6,7 +6,9 @@ const Works = (props)=>{
     return(
         <section className = "container works">
             <div className="sectionTitleBox">
-                <h2 className = "sectionTitle">Works</h2>
+                <div className="sectionBg">
+                    <h2 className = "sectionTitle">Works</h2>
+                </div>
             </div>
             <div className="inner">
                 <div className = "worksLIst">
@@ -66,7 +68,7 @@ const Works = (props)=>{
                     </a>
                 </div>
                 <div className = "nexPageBox">
-                    <Link className="nexPage" to="/history/">History</Link>
+                    <Link className="nexPage" to="/history/">Next page is history<span></span></Link>
                 </div>
             </div>
         </section>

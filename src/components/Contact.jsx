@@ -6,7 +6,9 @@ const Contact = (props)=>{
     return(
         <section className = "container contact">
             <div className="sectionTitleBox">
-                <h2 className = "sectionTitle">Contact</h2>
+                <div className="sectionBg">
+                    <h2 className = "sectionTitle">Contact</h2>
+                </div>
             </div>
             <div className="inner">
                 <ul className="contactSnsList">
@@ -51,7 +53,7 @@ const Contact = (props)=>{
                     </dl>
                 </form> */}
                 <div className = "nexPageBox">
-                    <Link className="nexPage" to="/">Top</Link>
+                    <Link className="nexPage" to="/">back to top<span></span></Link>
                 </div>
             </div>
         </section>

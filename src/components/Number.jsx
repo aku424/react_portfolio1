@@ -8,6 +8,7 @@ const Number = (props) => {
     
     return(
         <>
+        <div className="gameInner">
             <Image
                 count = {props.count}
                 isSmile = {props.isSmile}
@@ -36,6 +37,7 @@ const Number = (props) => {
                 })()}
                 
             </div>
+        </div>
         </>
     )
 };

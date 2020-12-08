@@ -26,13 +26,15 @@ const App = (props)=>{
             <Router>
                 <Header/>
                 {/* 挿入されるコンポーネント */}
-                <Route path="/" exact component={Top} />
-                <Route path="/Game/" exact component={Game} />
-                <Route path="/about/" exact component={About} />
-                <Route path="/works/" exact component={Works} />
-                <Route path="/History/" exact component={History} />
-                <Route path="/Contact/" exact component={Contact} />
-                <Footer/>
+                <main>
+                    <Route path="/" exact component={Top} />
+                    <Route path="/Game/" exact component={Game} />
+                    <Route path="/about/" exact component={About} />
+                    <Route path="/works/" exact component={Works} />
+                    <Route path="/History/" exact component={History} />
+                    <Route path="/Contact/" exact component={Contact} />
+                    <Footer/>
+                </main>
             </Router>
         </>
     )

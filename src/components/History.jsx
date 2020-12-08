@@ -5,7 +5,9 @@ const History = (props)=>{
     return(
         <section className = "container history">
             <div className="sectionTitleBox">
-                <h2 className = "sectionTitle">History</h2>
+                <div className="sectionBg">
+                    <h2 className = "sectionTitle">History</h2>
+                </div>
             </div>
             <div className = "inner">
                 <span className = "historyArrow"></span>
@@ -57,7 +59,7 @@ const History = (props)=>{
                     </div>
                 </dl>
                 <div className = "nexPageBox">
-                    <Link className="nexPage" to="/contact/">Contact</Link>
+                    <Link className="nexPage" to="/contact/">Next page is contact<span></span></Link>
                 </div>
             </div>
         </section>

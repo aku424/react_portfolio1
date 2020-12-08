@@ -47,17 +47,71 @@ a{
     cursor: pointer;
     &:hover{
         opacity: .7;
+        text-decoration: underline;
+    }
+}
+.sectionTitleBox{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+.sectionBg{
+    padding: 150px 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.sectionTitle{
+    z-index: 100;
+    font-size: 48px;
+    color: #fff;
+}
+main{
+    padding-top: 145px;
+}
+.nexPageBox{
+    text-align: right;
+}
+.nexPage{
+    display: inline-block;
+    background-color:rgba(0,0,0,.1) ;
+    padding: 4px 4px 4px 10px;
+    position: relative;
+    &:hover{
+        text-decoration: none;
+    }
+    span{
+        position: absolute;
+        transform: translate(20%, -11%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 17.5px 0 17.5px 20px;
+        border-color: transparent transparent transparent rgba(0,0,0,.1);
     }
 }
 /*====================================================================
                     header
 ====================================================================*/
 .header{
+    padding: 40px;
+    position: fixed;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+.headerInner{
     display: flex;
-    padding: 100px 40px;
+    max-width: 980px;
+    margin: 0 auto;
 }
 .headerTitle{
     font-size: $titleSize;
+    font-weight: bold;
 }
 .headerNav{
     margin-left: auto;
@@ -75,4 +129,98 @@ a{
     flex-direction: column;
     text-align: center;
     font-size:18px;
+}
+/*====================================================================
+                    top
+====================================================================*/
+.top{
+    text-align: left;
+    background-size: cover;
+
+}
+.bgTopInner{
+    padding: 0 40px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.sectionTopTitle{
+    color: $white;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.sectionTopText{
+    color: $white;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: bold;
+}
+.topGameText{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+/*====================================================================
+                    game
+====================================================================*/
+.gameTitle{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.gameText{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+.gameInner{
+    padding: 40px 0;
+    text-align: center;
+}
+.count{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.smileCount{
+    color: tomato;
+}
+.noSmileCount{
+    color: blue;  
+}
+.finishedComment{
+    font-size: 24px;
+    color: tomato;
+}
+.boxInner{
+    height:60px;
+    margin-top: 20px;
+}
+.btn{
+    margin: 0 auto;
+    background-color: tomato;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    &:active{
+        margin-top: 6px;
+        box-shadow: none;
+    }
+}
+/*====================================================================
+                    footer
+====================================================================*/
+.footerText{
+    text-align: center;
+    padding: 30px 0;
 }

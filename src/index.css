@@ -11,36 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.img ,h2{
-  text-align: center;
-  color: blue;  
-}
-.count{
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-}
+
+
 .finishedComment{
   font-size: 24px;
   text-align: center;
   color: tomato;
 
 }
-.smileCount{
-  color: tomato;
-}
-.noSmileCount{
-  color: blue;  
-}
-.imageText{
-  text-align: center;
-  font-size: 24px;
-  margin-top: 100px;
-}
-.boxInner{
-  text-align: center;
-  height: 100px;
-}
+
 .btn{
   margin: 0 auto;
   background-color: tomato;
