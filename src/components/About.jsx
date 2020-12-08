@@ -21,6 +21,8 @@ const About = (props)=>{
                         <dd className = "aboutFirstLIstDesc">21歳</dd>
                         <dt className = "aboutFirstListTitle">出身地：</dt>
                         <dd className = "aboutFirstLIstDesc">東京都</dd>
+                        <dt className = "aboutFirstListTitle">大学：</dt>
+                        <dd className = "aboutFirstLIstDesc">日本体育大学/体育学部/健康学科</dd>
                         <dt className = "aboutFirstListTitle">座右の銘：</dt>
                         <dd className = "aboutFirstLIstDesc">できない理由を探すより、できる方法を考えろ</dd>
                     </dl>
