@@ -7,7 +7,7 @@ const About = (props)=>{
         // aboutページ
         <section className = "container about">
             <div className="sectionTitleBox">
-                <h2 className = "sectionTitle">about</h2>
+                <h2 className = "sectionTitle">About</h2>
             </div>
             <div className="inner">
                 <div className="aboutFirst">
@@ -38,7 +38,7 @@ const About = (props)=>{
 
                         </div>
                         <h3 className = "skillTitle">HTML&CSS</h3>
-                        <p className = "skillText">プログラミングを始めた際に最初に取り掛かった言語です。簡単なwebサイトを作成できるほどのレベル感です。学習に関しましては独学とオンラインプログラミングスクール「30DAYS トライアル」で学習しております。</p>
+                        <p className = "skillText">プログラミングを始めた際に最初に取り掛かった言語です。現在はcss設計に関しての学習をしております。学習に関しましては独学とオンラインプログラミングスクール「30DAYS トライアル」で学習しております。</p>
                     </article>
                     <article className ="skillItem">
                         <div className="skillImg">
@@ -56,7 +56,7 @@ const About = (props)=>{
                     </article>
                 </div>
                 <div className = "nexPageBox">
-                    <Link className="nexPage" to="/history/">History</Link>
+                    <Link className="nexPage" to="/works/">Works</Link>
                 </div>
             </div>
         </section>
