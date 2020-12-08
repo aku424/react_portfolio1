@@ -1,12 +1,78 @@
+@charset "utf-8";
+/*====================================================================
+                    color
+====================================================================*/
+$white: #FFFFFF;
+$baseColor: #333333;
+$gray: #888888;
+/*====================================================================
+                    px
+====================================================================*/
+$titleSize: 38px;
+$sectionTitle: 32px;
+$baseSize: 16px;
+$resBaseSize: 14px;
 /*====================================================================
                     common style
 ====================================================================*/
-.
 
+$breakpoints: (
+//キー  値
+    'sm': 'screen and (max-width: 767px)',
+    'md': 'screen and (min-width: 768px)', //767px以上用の表示
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: sm) {
+//map-get(マップ型変数, キー)で値を取得
+    @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+    }
+}
+*{
+    font-size: $baseSize;
+    color: $baseColor;
+    font-family: "ヒラギノ明朝 ProN", serif;
+    line-height: 1.6875;
+}
+.inner{
+    max-width: 980px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: $baseColor;
+    cursor: pointer;
+    &:hover{
+        opacity: .7;
+    }
+}
 /*====================================================================
                     header
 ====================================================================*/
 .header{
     display: flex;
-    
+    padding: 100px 40px;
+}
+.headerTitle{
+    font-size: $titleSize;
+}
+.headerNav{
+    margin-left: auto;
+}
+.headerNavItem{
+    &+&{
+        margin-left: 20px;
+    }
+}
+.headerNavLIst{
+    display: flex;
+}
+.headerNavLink{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size:18px;
 }

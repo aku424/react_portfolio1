@@ -14,10 +14,12 @@ const Top = (props)=>{
                     ご興味ありましたら、引き続きよろしくお願いします。</p>
                 </div>
             </div>
-            <p>よければ以下のゲームを試して目てください。</p>
-            <Game/>
-            <div className = "nexPageBox">
-                <Link className="nexPage" to="/about/">about</Link>
+            <div className="inner">
+                <p>よければ以下のゲームを試して目てください。</p>
+                <Game/>
+                <div className = "nexPageBox">
+                    <Link className="nexPage" to="/about/">about</Link>
+                </div>
             </div>
         </section>
     )

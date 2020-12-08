@@ -1,1 +1,1 @@
-.header{display:flex}
+*{font-size:16px;color:#333;font-family:"ヒラギノ明朝 ProN", serif;line-height:1.6875}.inner{max-width:980px;padding:0 40px;margin:0 auto}a{text-decoration:none;color:#333;cursor:pointer}a:hover{opacity:.7}.header{display:flex;padding:100px 40px}.headerTitle{font-size:38px}.headerNav{margin-left:auto}.headerNavItem+.headerNavItem{margin-left:20px}.headerNavLIst{display:flex}.headerNavLink{display:flex;flex-direction:column;text-align:center;font-size:18px}
