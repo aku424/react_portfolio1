@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import contact from '../img/contact.jpg';
 
 const Contact = (props)=>{
     return(
-        <section className = "container contact">
-            <div className="sectionTitleBox">
+        <section className = "container ">
+            <div className="sectionTitleBox contact"style ={{backgroundImage:`url(${contact})`}}>
                 <div className="sectionBg">
                     <h2 className = "sectionTitle">Contact</h2>
                 </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
+import history from '../img/history.jpg';
 const History = (props)=>{
     return(
         <section className = "container history">
-            <div className="sectionTitleBox">
+            <div className="sectionTitleBox" style ={{backgroundImage:`url(${history})`}}>
                 <div className="sectionBg">
                     <h2 className = "sectionTitle">History</h2>
                 </div>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
+import works from '../img/works.jpg';
 
 const Works = (props)=>{
     return(
         <section className = "container works">
-            <div className="sectionTitleBox">
+            <div className="sectionTitleBox" style = {{backgroundImage:`url(${works})`}}>
                 <div className="sectionBg">
                     <h2 className = "sectionTitle">Works</h2>
                 </div>

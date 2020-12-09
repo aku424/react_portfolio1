@@ -35,6 +35,11 @@ $breakpoints: (
     color: $baseColor;
     font-family: "ヒラギノ明朝 ProN", serif;
     line-height: 1.6875;
+    letter-spacing: 1.1px;
+}
+img{
+    height: 100%;
+    width: 100%;
 }
 .inner{
     max-width: 980px;
@@ -55,6 +60,8 @@ a{
     text-align: center;
     position: relative;
     z-index: 0;
+    background-size: cover;
+    margin-bottom: 60px;
 }
 .sectionBg{
     padding: 150px 0;
@@ -78,6 +85,7 @@ main{
     background-color:rgba(0,0,0,.1) ;
     padding: 4px 4px 4px 10px;
     position: relative;
+    font-weight: 500;
     &:hover{
         text-decoration: none;
     }
@@ -129,14 +137,13 @@ main{
     flex-direction: column;
     text-align: center;
     font-size:18px;
+    
 }
 /*====================================================================
                     top
 ====================================================================*/
 .top{
     text-align: left;
-    background-size: cover;
-
 }
 .bgTopInner{
     padding: 0 40px;
@@ -159,7 +166,6 @@ main{
 .topGameText{
     text-align: center;
     font-size: 20px;
-    margin-top: 60px;
     font-weight: bold;
 }
 /*====================================================================
@@ -218,9 +224,94 @@ main{
     }
 }
 /*====================================================================
+                    about
+====================================================================*/
+.about{
+    background-position: center;
+}
+.aboutTitle{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    span{
+        display: block;
+        margin-top: 2px;
+        height: 1px;
+        width: 150px;
+        background-color: #000000;
+    }
+}
+.aboutFirst{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.aboutFirstPic{
+    flex: 0 0 38%;
+    img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.aboutFirstList{
+    flex: 0 0 58%;
+    align-self:center;
+}
+.aboutFirstItem{
+    display: flex;
+    margin-top: 10px;
+}
+.aboutFirstItemTitle{
+    flex:0 0 120px;
+    font-weight: bold;
+}
+.aboutFirstItemDesc{
+    font-weight: bold;
+    
+}
+.aboutSecond{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skillItem{
+    flex: 0 0 45%;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+.skillImg{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.skillTitle,
+.skillText{
+    padding: 0 30px;
+}
+.skillTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.skillText{
+    padding: 20px 30px;
+    text-align: justify;
+}
+
+/*====================================================================
+                    contact
+====================================================================*/
+.contact{
+    background-position: bottom;
+}
+/*====================================================================
                     footer
 ====================================================================*/
 .footerText{
     text-align: center;
     padding: 30px 0;
+}
+.footerText{
+    font-size: 14px;
 }
