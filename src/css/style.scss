@@ -62,9 +62,10 @@ a{
     z-index: 0;
     background-size: cover;
     margin-bottom: 60px;
+    
 }
 .sectionBg{
-    padding: 150px 0;
+    padding: 150px 40px;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
@@ -77,8 +78,22 @@ a{
 main{
     padding-top: 145px;
 }
+.subTitle{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    span{
+        display: block;
+        margin-top: 2px;
+        height: 1px;
+        width: 150px;
+        background-color: #000000;
+        margin-bottom: 60px;
+    }
+}
 .nexPageBox{
     text-align: right;
+    margin-top: 60px;
 }
 .nexPage{
     display: inline-block;
@@ -124,15 +139,15 @@ main{
 .headerNav{
     margin-left: auto;
 }
-.headerNavItem{
+.navItem{
     &+&{
         margin-left: 20px;
     }
 }
-.headerNavLIst{
+.navLIst{
     display: flex;
 }
-.headerNavLink{
+.navLink{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -149,7 +164,6 @@ main{
     text-align: left;
 }
 .bgTopInner{
-    padding: 0 40px;
     max-width: 980px;
     margin: 0 auto;
 }
@@ -232,18 +246,6 @@ main{
 .about{
     background-position: center;
 }
-.aboutTitle{
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    span{
-        display: block;
-        margin-top: 2px;
-        height: 1px;
-        width: 150px;
-        background-color: #000000;
-    }
-}
 .aboutFirst{
     display: flex;
     justify-content: space-between;
@@ -283,8 +285,11 @@ main{
 .skillItem{
     flex: 0 0 45%;
     box-shadow: 0 8px 20px rgba(0,0,0,.2);
-    margin-bottom: 50px;
     border-radius: 8px;
+    &:nth-child(3),
+    &:nth-child(4){
+        margin-top: 50px;
+    }
 }
 .skillImg{
     height: 300px;
@@ -312,7 +317,6 @@ main{
 ====================================================================*/
 .historyBox{
     display: flex;
-    margin: 60px 0;
 }
 .historyArrow{
     display: block;
@@ -357,6 +361,14 @@ main{
 ====================================================================*/
 .contact{
     background-position: bottom;
+}
+.snsList{
+    justify-content:center;
+}
+.snsItem{
+    &+&{
+        margin-left: 30px;
+    }
 }
 /*====================================================================
                     footer

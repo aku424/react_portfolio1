@@ -11,7 +11,7 @@ const Works = (props)=>{
                 </div>
             </div>
             <div className="inner">
-                <h3 className = "aboutTitle">works<span></span></h3>
+                <h3 className = "subTitle">works<span></span></h3>
                 <div className = "worksLIst">
                     <a className = "workItemLink" href="#">
                         <article className="workItem">

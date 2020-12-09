@@ -14,14 +14,14 @@ const Header = (props)=>{
                 <div className="headerInner">
                     <Link to="/"><h1 className = "headerTitle">takashima takuto</h1></Link>
                     <nav className="headerNav">
-                        <ul className="headerNavLIst">
+                        <ul className="navLIst">
                             {/* <Router> */}
-                                <li className="headerNavItem"><Link className="headerNavLink" to="/"><FontAwesomeIcon icon={['fas', "home" ]} className = "fa-2x fa-fw"/>top</Link></li>
-                                <li className="headerNavItem"><Link className="headerNavLink" to="/game"><FontAwesomeIcon icon={['fas', 'minus-circle']} className = "fa-2x fa-fw" />game</Link></li>
-                                <li className="headerNavItem"><Link className="headerNavLink" to="/about/"><FontAwesomeIcon icon={['far', "address-card"]} className = "fa-2x fa-fw" />about</Link></li>
-                                <li className="headerNavItem"><Link className="headerNavLink" to="/works/"><FontAwesomeIcon icon={['fas', "laptop"]} className = "fa-2x fa-fw" />works</Link></li>
-                                <li className="headerNavItem"><Link className="headerNavLink" to="/history/"><FontAwesomeIcon icon={['fas', "book"]} className = "fa-2x fa-fw" />History</Link></li>
-                                <li className="headerNavItem"><Link className="headerNavLink" to="/contact/"><FontAwesomeIcon icon={['fas', "mobile-alt"]} className = "fa-2x fa-fw" />contact</Link></li>
+                                <li className="navItem"><Link className="navLink" to="/"><FontAwesomeIcon icon={['fas', "home" ]} className = "fa-2x fa-fw"/>top</Link></li>
+                                <li className="navItem"><Link className="navLink" to="/game"><FontAwesomeIcon icon={['fas', 'minus-circle']} className = "fa-2x fa-fw" />game</Link></li>
+                                <li className="navItem"><Link className="navLink" to="/about/"><FontAwesomeIcon icon={['far', "address-card"]} className = "fa-2x fa-fw" />about</Link></li>
+                                <li className="navItem"><Link className="navLink" to="/works/"><FontAwesomeIcon icon={['fas', "laptop"]} className = "fa-2x fa-fw" />works</Link></li>
+                                <li className="navItem"><Link className="navLink" to="/history/"><FontAwesomeIcon icon={['fas', "book"]} className = "fa-2x fa-fw" />History</Link></li>
+                                <li className="navItem"><Link className="navLink" to="/contact/"><FontAwesomeIcon icon={['fas', "mobile-alt"]} className = "fa-2x fa-fw" />contact</Link></li>
                             {/* </Router> */}
                         </ul>
                     </nav>

@@ -19,7 +19,7 @@ const About = (props)=>{
                 </div>
             </div>
             <div className="inner">
-                <h3 className = "aboutTitle">profile<span></span></h3>
+                <h3 className = "subTitle">profile<span></span></h3>
                 <div className="aboutFirst">
                     <div className="aboutFirstPic">
                         <img src={prof} alt="プロフィール画像"/>
@@ -47,7 +47,7 @@ const About = (props)=>{
                         </div>
                     </dl>
                 </div>
-                <h3 className = "aboutTitle">skill <span></span></h3>
+                <h3 className = "subTitle">skill <span></span></h3>
                 <div className = "aboutSecond">
                     <article className ="skillItem">
                         <div className="skillImg">

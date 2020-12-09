@@ -12,16 +12,17 @@ const Contact = (props)=>{
                 </div>
             </div>
             <div className="inner">
-                <ul className="contactSnsList">
-                    <a href="https://twitter.com/t_takutooo" className="snsLink">
-                        <li className="snsItem"><FontAwesomeIcon icon={['fab', "twitter" ]} className = "fa-3x fa-fw"/>Twitter</li>
-                    </a>
-                    <a href="https://github.com/aku424" className="snsLink">
-                        <li className="snsItem"><FontAwesomeIcon icon={['fab', "github" ]} className = "fa-3x fa-fw"/>GitHub</li>
-                    </a>
-                    <a href="mailto:aku424tt@gmail.com" className="snsLink">
-                        <li className="snsItem"><FontAwesomeIcon icon={['far', "envelope" ]} className = "fa-3x fa-fw"/>E-mail</li>
-                    </a>
+            <h3 className = "subTitle">contact<span></span></h3>
+                <ul className="snsList navLIst">
+                    <li className="snsItem  navItem">
+                        <a href="https://twitter.com/t_takutooo" className="navLink"><FontAwesomeIcon icon={['fab', "twitter" ]} className = "fa-3x fa-fw"/>Twitter</a>
+                    </li>
+                    <li className="snsItem navItem">
+                        <a href="https://github.com/aku424" className="navLink"><FontAwesomeIcon icon={['fab', "github" ]} className = "fa-3x fa-fw"/>GitHub</a>
+                    </li>
+                    <li className="snsItem navItem">
+                        <a href="mailto:aku424tt@gmail.com" className="navLink"><FontAwesomeIcon icon={['far', "envelope" ]} className = "fa-3x fa-fw"/>E-mail</a>
+                    </li>
                 </ul>
                 {/* 以下は余裕かあれば作成する 
                 <form action="">

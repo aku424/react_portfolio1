@@ -10,7 +10,7 @@ const History = (props)=>{
                 </div>
             </div>
             <div className = "inner">
-                <h3 className = "aboutTitle">history<span></span></h3>
+                <h3 className = "subTitle">history<span></span></h3>
                 <div className="historyBox">
                     <span className = "historyArrow"></span>
                     <dl className="historyList">
