@@ -134,6 +134,10 @@ main {
   font-size: 18px;
 }
 
+.headerNavLink svg {
+  margin: 0 auto;
+}
+
 /*====================================================================
                     top
 ====================================================================*/
@@ -276,6 +280,9 @@ main {
 
 .aboutFirstItem {
   display: flex;
+}
+
+.aboutFirstItem + .aboutFirstItem {
   margin-top: 10px;
 }
 
@@ -285,6 +292,7 @@ main {
 }
 
 .aboutFirstItemDesc {
+  flex: 1 1 100%;
   font-weight: bold;
 }
 
@@ -321,6 +329,62 @@ main {
 .skillText {
   padding: 20px 30px;
   text-align: justify;
+}
+
+/*====================================================================
+                    works
+====================================================================*/
+/*====================================================================
+                    history
+====================================================================*/
+.historyBox {
+  display: flex;
+  margin: 60px 0;
+}
+
+.historyArrow {
+  display: block;
+  width: 1px;
+  height: 100;
+  background-color: #333333;
+  position: relative;
+}
+
+.historyList {
+  flex: 1 1 100%;
+}
+
+.historyItem {
+  display: flex;
+  position: relative;
+}
+
+.historyItem + .historyItem {
+  margin-top: 30px;
+}
+
+.historyMark {
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 7.5px 0 7.5px;
+  border-color: #333333 transparent transparent transparent;
+  transform: translate(-50%, 100%);
+}
+
+.historyDate {
+  margin-left: 50px;
+  flex: 0 0 150px;
+  font-weight: bold;
+}
+
+.historyText {
+  flex: 1 1 100%;
 }
 
 /*====================================================================
