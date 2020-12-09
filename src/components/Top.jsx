@@ -12,7 +12,7 @@ const Top = (props)=>{
                         <div className = "bgTopInner">
                             <h2 className = "sectionTopTitle">Welcome to my portfolio site</h2>
                             <p className = "sectionTopText">初めまして。ご覧いただきありがとうございます。<br/> 
-                            当webサイトは私の自己紹介を主に取り扱っております。<br/>
+                            当webサイトは主に私の自己紹介を取り扱っております。<br/>
                             ご興味ありましたら、引き続きよろしくお願いします。</p>
                         </div>
                     </div>

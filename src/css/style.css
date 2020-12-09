@@ -338,6 +338,63 @@ main {
 /*====================================================================
                     works
 ====================================================================*/
+.workItemLink {
+  display: block;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.workItemLink + .workItemLink {
+  margin-top: 70px;
+}
+
+.workItemLink:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.workItemImg {
+  border-bottom: solid 0.1px rgba(0, 0, 0, 0.1);
+}
+
+.workItemImg img {
+  border-radius: 8px 8px 0 0;
+}
+
+.workItemTitle,
+.workItemLanguage,
+.workItemText {
+  padding: 0 30px;
+}
+
+.workItemTitle {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.workItemLanguage {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.workItemText {
+  padding-bottom: 25px;
+}
+
+/*====================================================================
+                    movies
+====================================================================*/
+.movies {
+  background-position: bottom;
+}
+
+.moviesBox {
+  height: 450px;
+  margin: 0 auto;
+}
+
 /*====================================================================
                     history
 ====================================================================*/

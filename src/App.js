@@ -8,6 +8,7 @@ import Top from './components/Top';
 import Game from './components/Game';
 import About from './components/About';
 import Works from './components/Works';
+import Movies from './components/Movies';
 import History from './components/History';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -20,6 +21,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'; //fontawesomeのregul
 
 library.add(fab, fas, far); //他のコンポーネントから簡単に呼び出せるようにするための記述
 
+
 const App = (props)=>{
     return(
         <>
@@ -31,6 +33,7 @@ const App = (props)=>{
                     <Route path="/Game/" exact component={Game} />
                     <Route path="/about/" exact component={About} />
                     <Route path="/works/" exact component={Works} />
+                    <Route path="/movies/:id" exact component={Movies} />
                     <Route path="/History/" exact component={History} />
                     <Route path="/Contact/" exact component={Contact} />
                     <Footer/>
