@@ -71,10 +71,22 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .sectionBg {
+    padding: 50px 20px;
+  }
+}
+
 .sectionTitle {
   z-index: 100;
   font-size: 48px;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 32px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -86,6 +98,12 @@ a:hover {
 .subTitle {
   font-size: 28px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .subTitle {
+    font-size: 20px;
+  }
 }
 
 .subTitle span {
@@ -100,6 +118,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   .subTitle span {
     margin-bottom: 30px;
+    width: 100px;
   }
 }
 
@@ -744,8 +763,20 @@ a:hover {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .historyItem {
+    display: block;
+  }
+}
+
 .historyItem + .historyItem {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .historyItem + .historyItem {
+    margin-top: 20px;
+  }
 }
 
 .historyMark {
@@ -763,13 +794,32 @@ a:hover {
 }
 
 .historyDate {
-  margin-left: 50px;
-  flex: 0 0 150px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 769px) {
+  .historyDate {
+    margin-left: 50px;
+    flex: 0 0 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .historyDate {
+    margin-bottom: 5px;
+    margin-left: 30px;
+  }
 }
 
 .historyText {
   flex: 1 1 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .historyText {
+    font-size: 14px;
+    margin-left: 30px;
+  }
 }
 
 /*====================================================================

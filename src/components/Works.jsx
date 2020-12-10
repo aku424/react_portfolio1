@@ -69,7 +69,7 @@ const Works = (props)=>{
                             <div className="workItemImg">
                             <img src={ReactSite} alt=""/>
                             </div>
-                            <h3 className = "workItemTitle">Reactでのポートフォリオサイト（当サイト）</h3>
+                            <h3 className = "workItemTitle">Reactでのポートフォリオサイト</h3>
                             <p className="workItemLanguage">使用言語：Javascript、React、HTML&CSS</p>
                             <p className="workItemText">Reactを学習しつ作成いたしました。Reactの考え方や基本的使い方の理解につながりました。</p>
                         </article>
