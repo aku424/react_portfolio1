@@ -632,6 +632,12 @@ main{
 }
 .snsList{
     justify-content:center;
+    @include mq(sm){
+        margin-bottom: 220px;
+    }
+    @include mq(br){
+        margin-bottom: 280px;
+    }
 }
 .snsItem{
     &+&{

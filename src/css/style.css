@@ -833,6 +833,18 @@ a:hover {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .snsList {
+    margin-bottom: 220px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .snsList {
+    margin-bottom: 280px;
+  }
+}
+
 .snsItem + .snsItem {
   margin-left: 30px;
 }
