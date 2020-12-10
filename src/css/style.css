@@ -23,8 +23,14 @@ img {
 
 .inner {
   max-width: 980px;
-  padding: 0 40px;
   margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    padding: 0 20px;
+  }
 }
 
 a {
@@ -35,7 +41,6 @@ a {
 
 a:hover {
   opacity: .7;
-  text-decoration: underline;
 }
 
 .sectionTitleBox {
@@ -47,11 +52,23 @@ a:hover {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .sectionTitleBox {
+    margin-bottom: 30px;
+  }
+}
+
 .sectionBg {
-  padding: 150px 40px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 150px 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionBg {
+    padding: 80px 20px;
+  }
 }
 
 .sectionTitle {
@@ -60,14 +77,15 @@ a:hover {
   color: #fff;
 }
 
-main {
-  padding-top: 145px;
+@media screen and (min-width: 769px) {
+  main {
+    padding-top: 145px;
+  }
 }
 
 .subTitle {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .subTitle span {
@@ -79,17 +97,36 @@ main {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .subTitle span {
+    margin-bottom: 30px;
+  }
+}
+
 .nexPageBox {
   text-align: right;
   margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .nexPageBox {
+    margin-top: 30px;
+  }
 }
 
 .nexPage {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 4px 4px 4px 10px;
+  margin-right: 20px;
   position: relative;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .nexPage {
+    font-size: 12px;
+  }
 }
 
 .nexPage:hover {
@@ -106,24 +143,85 @@ main {
   border-color: transparent transparent transparent rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+  .nexPage span {
+    transform: translate(26.7%, -14%);
+    border-width: 14px 0 14px 15px;
+  }
+}
+
 /*====================================================================
                     header
 ====================================================================*/
 .header {
-  padding: 40px;
   position: fixed;
   background-color: #FFFFFF;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   z-index: 100;
 }
 
+@media screen {
+  .header {
+    padding: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 15px;
+  }
+}
+
+@media screen {
+  .headerRes {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerRes {
+    display: block;
+    padding: 10px 20px;
+  }
+}
+
+.headerTitleLinkRes {
+  padding: 5px;
+}
+
+.headerTitleLinkRes .headerTitle {
+  font-size: 26px;
+  display: inline-block;
+}
+
 .headerInner {
-  display: flex;
-  max-width: 980px;
   margin: 0 auto;
+  max-width: 980px;
+}
+
+@media screen and (min-width: 769px) {
+  .headerInner {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerInner {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerTitleLink {
+    display: none;
+  }
 }
 
 .headerTitle {
@@ -131,16 +229,32 @@ main {
   font-weight: bold;
 }
 
-.headerNav {
-  margin-left: auto;
-}
-
-.navItem + .navItem {
-  margin-left: 20px;
+@media screen and (min-width: 769px) {
+  .headerNav {
+    margin-left: auto;
+  }
 }
 
 .navLIst {
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .navLIst {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navItem + .navItem {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navItem + .navItem {
+    margin-left: 3%;
+  }
 }
 
 .navLink {
@@ -148,6 +262,12 @@ main {
   flex-direction: column;
   text-align: center;
   font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .navLink {
+    font-size: 14px;
+  }
 }
 
 .navLink svg {
@@ -161,30 +281,54 @@ main {
   text-align: left;
 }
 
+@media screen and (max-width: 768px) {
+  .top {
+    background-position: right;
+  }
+}
+
 .bgTopInner {
   max-width: 980px;
   margin: 0 auto;
 }
 
 .sectionTopTitle {
-  color: #FFFFFF;
-  font-size: 28px;
-  letter-spacing: 1.5px;
-  margin-bottom: 10px;
   font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTopTitle {
+    font-size: 20px;
+  }
 }
 
 .sectionTopText {
   color: #FFFFFF;
-  font-size: 18px;
   line-height: 2;
   font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTopText {
+    font-size: 14px;
+  }
 }
 
 .topGameText {
   text-align: center;
-  font-size: 20px;
   font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .topGameText {
+    font-weight: 16px;
+  }
 }
 
 /*====================================================================
@@ -192,16 +336,28 @@ main {
 ====================================================================*/
 .gameTitle {
   text-align: center;
-  font-size: 32px;
   font-weight: bold;
   margin-top: 40px;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .gameTitle {
+    font-size: 20px;
+  }
 }
 
 .gameText {
-  font-size: 24px;
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .gameText {
+    font-size: 16px;
+  }
 }
 
 .gameInner {
@@ -209,10 +365,23 @@ main {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .gameInner {
+    padding: 20px 0;
+  }
+}
+
 .count {
-  font-size: 32px;
   font-weight: bold;
   margin-top: 20px;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .count {
+    font-size: 20px;
+    margin-top: 15px;
+  }
 }
 
 .smileCount {
@@ -233,18 +402,30 @@ main {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .boxInner {
+    height: 40px;
+  }
+}
+
 .btn {
   margin: 0 auto;
   background-color: tomato;
   display: inline-block;
-  padding: 10px 20px;
   color: #fff;
-  margin-left: 20px;
   cursor: pointer;
-  font-size: 24px;
   font-weight: bold;
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
 }
 
 .btn:active {
@@ -259,24 +440,51 @@ main {
   background-position: center;
 }
 
-.aboutFirst {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
+@media screen {
+  .aboutFirst {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 100px;
+  }
 }
 
-.aboutFirstPic {
-  flex: 0 0 38%;
+@media screen and (max-width: 768px) {
+  .aboutFirst {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen {
+  .aboutFirstPic {
+    flex: 0 0 38%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutFirstPic {
+    width: 70%;
+    margin: 0 auto 40px auto;
+  }
 }
 
 .aboutFirstPic img {
-  width: 100%;
   border-radius: 50%;
 }
 
-.aboutFirstList {
-  flex: 0 0 58%;
-  align-self: center;
+@media screen and (min-width: 769px) {
+  .aboutFirstList {
+    flex: 0 0 58%;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutFirstList {
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .aboutFirstItem {
@@ -288,8 +496,20 @@ main {
 }
 
 .aboutFirstItemTitle {
-  flex: 0 0 120px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 769px) {
+  .aboutFirstItemTitle {
+    flex: 0 0 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutFirstItemTitle {
+    flex: 0 0 76px;
+    font-size: 14px;
+  }
 }
 
 .aboutFirstItemDesc {
@@ -297,20 +517,43 @@ main {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .aboutFirstItemDesc {
+    font-size: 14px;
+  }
+}
+
+.br {
+  display: none;
+}
+
+@media screen and (max-width: 520px) {
+  .br {
+    display: block;
+  }
+}
+
 .aboutSecond {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.skillSubTitle span {
+  margin-bottom: 0;
 }
 
 .skillItem {
   flex: 0 0 45%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  margin-top: 60px;
 }
 
-.skillItem:nth-child(3), .skillItem:nth-child(4) {
-  margin-top: 50px;
+@media screen and (max-width: 768px) {
+  .skillItem {
+    margin-top: 30px;
+  }
 }
 
 .skillImg {
@@ -325,9 +568,22 @@ main {
   padding: 0 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .skillTitle,
+  .skillText {
+    padding: 0 20px;
+  }
+}
+
 .skillTitle {
   font-size: 20px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .skillTitle {
+    font-size: 16px;
+  }
 }
 
 .skillText {
@@ -335,13 +591,21 @@ main {
   text-align: justify;
 }
 
+@media screen and (max-width: 768px) {
+  .skillText {
+    font-size: 14px;
+    padding: 10px 20px 20px;
+  }
+}
+
 /*====================================================================
                     works
 ====================================================================*/
 .workItemLink {
   display: block;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  transition: all .2s ease;
 }
 
 .workItemLink + .workItemLink {
@@ -349,8 +613,21 @@ main {
 }
 
 .workItemLink:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   opacity: 1;
+}
+
+.workSubText {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .workSubText {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
 }
 
 .workItemImg {
@@ -361,26 +638,64 @@ main {
   border-radius: 8px 8px 0 0;
 }
 
+.workItemLanguageBr {
+  display: none;
+}
+
+@media screen and (max-width: 520px) {
+  .workItemLanguageBr {
+    display: block;
+  }
+}
+
 .workItemTitle,
 .workItemLanguage,
 .workItemText {
   padding: 0 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .workItemTitle,
+  .workItemLanguage,
+  .workItemText {
+    padding: 0 20px;
+  }
+}
+
 .workItemTitle {
-  padding-top: 25px;
   padding-bottom: 5px;
-  font-size: 20px;
   font-weight: bold;
+  padding-top: 25px;
+  font-size: 20px;
+}
+
+@media screen {
+  .workItemTitle {
+    padding-top: 15px;
+    font-size: 16px;
+  }
 }
 
 .workItemLanguage {
+  width: 100%;
   font-weight: bold;
   padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .workItemLanguage {
+    font-size: 14px;
+  }
 }
 
 .workItemText {
   padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .workItemText {
+    font-size: 14px;
+  }
 }
 
 /*====================================================================
@@ -392,7 +707,17 @@ main {
 
 .moviesBox {
   height: 450px;
+  width: 700px !important;
   margin: 0 auto;
+}
+
+.moviesBox div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.video-stream {
+  width: 100%;
 }
 
 /*====================================================================
@@ -465,11 +790,29 @@ main {
 /*====================================================================
                     footer
 ====================================================================*/
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-bottom: 81px;
+  }
+}
+
 .footerText {
   text-align: center;
   padding: 30px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .footerText {
+    padding: 30px 0 10px 0;
+  }
+}
+
 .footerText {
   font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .footerText {
+    font-size: 10px;
+  }
 }

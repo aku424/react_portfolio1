@@ -12,6 +12,7 @@ import Movies from './components/Movies';
 import History from './components/History';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollTop';
 
 // font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'; //fontawesomeのコアファイル
@@ -26,18 +27,20 @@ const App = (props)=>{
     return(
         <>
             <Router>
-                <Header/>
-                {/* 挿入されるコンポーネント */}
-                <main>
-                    <Route path="/" exact component={Top} />
-                    <Route path="/Game/" exact component={Game} />
-                    <Route path="/about/" exact component={About} />
-                    <Route path="/works/" exact component={Works} />
-                    <Route path="/movies/:id" exact component={Movies} />
-                    <Route path="/History/" exact component={History} />
-                    <Route path="/Contact/" exact component={Contact} />
-                    <Footer/>
-                </main>
+                <ScrollToTop>
+                    <Header/>
+                    {/* 挿入されるコンポーネント */}
+                    <main>
+                        <Route path="/" exact component={Top} />
+                        <Route path="/Game/" exact component={Game} />
+                        <Route path="/about/" exact component={About} />
+                        <Route path="/works/" exact component={Works} />
+                        <Route path="/movies/:id" exact component={Movies} />
+                        <Route path="/History/" exact component={History} />
+                        <Route path="/Contact/" exact component={Contact} />
+                        <Footer/>
+                    </main>
+                </ScrollToTop>
             </Router>
         </>
     )

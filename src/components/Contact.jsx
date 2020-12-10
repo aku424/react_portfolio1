@@ -55,7 +55,7 @@ const Contact = (props)=>{
                     </dl>
                 </form> */}
                 <div className = "nexPageBox">
-                    <Link className="nexPage" to="/">back to top<span></span></Link>
+                    <Link className="nexPage" to="/">Back to top<span></span></Link>
                 </div>
             </div>
         </section>

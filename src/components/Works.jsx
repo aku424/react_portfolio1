@@ -21,6 +21,8 @@ const Works = (props)=>{
             </div>
             <div className="inner">
                 <h3 className = "subTitle">works<span></span></h3>
+                <p className="workSubText">※コンテンツをクリックしていただけると動画ページに移動します。<br/>
+                ※音声はありません。</p>
                 <div className = "worksLIst">
                     <Link to ="/movies/lp1/" className = "workItemLink">
                         <article className="workItem">
@@ -28,7 +30,7 @@ const Works = (props)=>{
                                 <img src={LP1} alt=""/>
                             </div>
                             <h3 className = "workItemTitle">アクセサリーサイトのLP</h3>
-                            <p className="workItemLanguage">使用言語：HTML&CSS,Javascript(JQuery)</p>
+                            <p className="workItemLanguage">使用言語：HTML&CSS、Javascript(JQuery)</p>
                             <p className="workItemText">学習の1つとしてデザインカンプからのコーディングをいたしました。コンタクトフォームはGoogle Formsを使用しました。</p>
                         </article>
                     </Link>
@@ -38,7 +40,7 @@ const Works = (props)=>{
                                 <img src={LP2} alt=""/>
                             </div>
                             <h3 className = "workItemTitle">LPサイト</h3>
-                            <p className="workItemLanguage">使用言語：HTML&CSS,Javascript(JQuery)</p>
+                            <p className="workItemLanguage">使用言語：HTML&CSS、Javascript(JQuery)</p>
                             <p className="workItemText">架空の店舗をデザインから自分で考えコーディングいたしました。</p>
                         </article>
                     </Link>
@@ -48,7 +50,7 @@ const Works = (props)=>{
                             <img src={WP} alt=""/>
                             </div>
                             <h3 className = "workItemTitle">wordpress独自テーマ１</h3>
-                            <p className="workItemLanguage">使用言語：HTML&CSS,Javascript(JQuery),PHP,wordpress</p>
+                            <p className="workItemLanguage">使用言語：HTML&CSS、Javascript(JQuery)、PHP、wordpress</p>
                             <p className="workItemText">練習の1つとして作成いたしました。</p>
                         </article>
                     </Link>
@@ -68,7 +70,7 @@ const Works = (props)=>{
                             <img src={ReactSite} alt=""/>
                             </div>
                             <h3 className = "workItemTitle">Reactでのポートフォリオサイト（当サイト）</h3>
-                            <p className="workItemLanguage">使用言語：Javascript,React,HTML&CSS</p>
+                            <p className="workItemLanguage">使用言語：Javascript、React、HTML&CSS</p>
                             <p className="workItemText">Reactを学習しつ作成いたしました。Reactの考え方や基本的使い方の理解につながりました。</p>
                         </article>
                     </Link>
@@ -78,7 +80,7 @@ const Works = (props)=>{
                             <img src={Ruby} alt=""/>
                             </div>
                             <h3 className = "workItemTitle">簡単なSNSアプリ</h3>
-                            <p className="workItemLanguage">使用言語：Ruby, Ruby on Rails,HTML&CSS</p>
+                            <p className="workItemLanguage">使用言語：Ruby、Ruby on Rails、HTML&CSS</p>
                             <p className="workItemText">こちらも練習の1つとして作成いたしました。CRUDの基本的な機能にコメントといいね機能を付けました。</p>
                         </article>
                     </Link>

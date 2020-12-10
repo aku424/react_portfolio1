@@ -43,11 +43,11 @@ const About = (props)=>{
                         </div>
                         <div className="aboutFirstItem">
                             <dt className = "aboutFirstItemTitle">座右の銘：</dt>
-                            <dd className = "aboutFirstItemDesc">できない理由を探すより、できる方法を考えろ</dd>
+                            <dd className = "aboutFirstItemDesc">できない理由を探すより、<br className= "br"/> できる方法を考えろ</dd>
                         </div>
                     </dl>
                 </div>
-                <h3 className = "subTitle">skill <span></span></h3>
+                <h3 className = "subTitle skillSubTitle">skill <span className="sectionSkillTitle"></span></h3>
                 <div className = "aboutSecond">
                     <article className ="skillItem">
                         <div className="skillImg">

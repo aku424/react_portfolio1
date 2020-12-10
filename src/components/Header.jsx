@@ -9,10 +9,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = (props)=>{
     return(
-        <>
+        <>  
+            <header className ="headerRes">
+                <Link to="/"  className = "headerTitleLinkRes"><h1 className = "headerTitle">takashima takuto</h1></Link>
+            </header>
             <header className="header">
                 <div className="headerInner">
-                    <Link to="/"><h1 className = "headerTitle">takashima takuto</h1></Link>
+                    <Link to="/" className = "headerTitleLink"><h1 className = "headerTitle">takashima takuto</h1></Link>
                     <nav className="headerNav">
                         <ul className="navLIst">
                             {/* <Router> */}
