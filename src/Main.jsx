@@ -1,80 +1,29 @@
 import React from 'react';
-import Number from './Number';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Header from './components/Header';
+import Top from './components/Top';
+import Game from './components/Game';
+import About from './components/About';
+import Works from './components/Works';
+import History from './components/History';
+import Contact from './components/Contact';
 
+const App = (props)=>{
+    return(
+        <>
+        <Header/>
+        <Router>
+            {/* 挿入されるコンポーネント */}
+            <Route path="/" exact component={Top} />
+            <Route path="/Game/" exact component={Game} />
+            <Route path="/about/" exact component={About} />
+            <Route path="/works/" exact component={Works} />
+            <Route path="/History/" exact component={History} />
+            <Route path="/Contact/" exact component={Contact} />
 
-
-class Main extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
-            count:0,
-            isSmile:false,
-            isFinished :false
-        }
-    }
-    
-    
-    componentDidUpdate(){
-        if(this.state.count >41){
-            this.setState({
-                count:0
-            })
-        }
-    }
-    addCount = ()=>{
-        this.setState({
-            count : this.state.count+1
-        });
-    }
-    toggleSmile=()=>{
-        if((this.state.count+1) % 3 === 0){
-            this.setState({
-                isSmile:true
-            })
-        }else if((this.state.count-9) === 3 && this.state.count >10 ){
-            this.setState({
-                isSmile:true
-            })
-        }else if((this.state.count-19) === 3 && this.state.count >20 ){
-            this.setState({
-                isSmile:true
-            })
-        }else if(this.state.count >=30 && this.state.count <39){
-            this.setState({
-                isSmile:true
-            })
-        }
-        else{
-            this.setState({
-                isSmile:false
-            })
-        }
-    }
-    toggleFinished=()=>{
-        if(this.state.count === 40){
-            this.setState({
-                isFinished:true
-            })
-        }else{
-            this.setState({
-                isFinished:false
-            })
-        }
-    }
-    render(){
-        return(
-            <>
-                <Number
-                    count = {this.state.count}
-                    add ={()=>{this.addCount()}}
-                    toggleSmile = {()=>{this.toggleSmile()}}
-                    isSmile = {this.state.isSmile}
-                    isFinished = {this.state.isFinished}
-                    toggleFinished =　{()=>{this.toggleFinished()}}
-                />
-            </>
-        )
-    }
+        </Router>
+        </>
+    )
 }
 
-export default Main;
+export default App;

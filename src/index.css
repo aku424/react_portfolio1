@@ -11,15 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.img ,h2{
+
+
+.finishedComment{
+  font-size: 24px;
   text-align: center;
-  color: blue;  
-}
-.img{
-  margin-top: 100px;
-}
-.boxInner{
-  text-align: center;
+  color: tomato;
+
 }
 .btn{
   margin: 0 auto;
@@ -29,4 +27,12 @@ code {
   color: #fff;
   margin-left: 20px;
   cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.btn:active{
+  margin-top: 6px;
+  box-shadow: none;
 }
