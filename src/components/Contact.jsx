@@ -54,6 +54,7 @@ const Contact = (props)=>{
                         <button type="submit">送信</button>
                     </dl>
                 </form> */}
+                
                 <div className = "nexPageBox">
                     <Link className="nexPage" to="/">Back to top<span></span></Link>
                 </div>
