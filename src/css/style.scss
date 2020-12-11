@@ -15,7 +15,6 @@ $resBaseSize: 14px;
 /*====================================================================
                     common style
 ====================================================================*/
-
 $breakpoints: (
 //キー  値
     'br': 'screen and (max-width: 520px)', 
@@ -67,7 +66,6 @@ a{
     margin-bottom: 60px;
     @include mq(sm){
         margin-bottom: 30px;
-        
     }
 }
 .sectionBg{
