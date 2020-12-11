@@ -6,9 +6,7 @@ import js from '../img/js.png';
 import html from '../img/html.png';
 import ruby from '../img/ruby.png';
 import wp from '../img/wp.png';
-
-
-
+///関数の定義
 const About = (props)=>{
     return(
         // aboutページ
