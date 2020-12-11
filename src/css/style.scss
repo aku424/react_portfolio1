@@ -266,6 +266,9 @@ main{
     @include mq(sm){
         font-size: 20px;
     }
+    @include mq(sm){
+        font-size: 18px;
+    }
 
 }
 .sectionTopText{
@@ -276,6 +279,9 @@ main{
     @include mq(sm){
         font-size: 14px;
     }
+    @include mq(sm){
+        font-size: 12px;
+    }
 }
 .topGameText{
     text-align: center;
@@ -283,6 +289,9 @@ main{
     font-size: 20px;
     @include mq(sm){
         font-weight: 16px;
+    }
+    @include mq(br){
+        font-size: $resBaseSize;
     }
 }
 /*====================================================================
@@ -296,6 +305,9 @@ main{
     @include mq(sm){
         font-size: 20px;
     }
+    @include mq(br){
+        font-size: 18px;
+    }
 }
 .gameText{
     font-weight: bold;
@@ -304,6 +316,9 @@ main{
     font-size: 24px;
     @include mq(sm){
         font-size: 16px;
+    }
+    @include mq(br){
+        font-size: 14px;
     }
 }
 .gameInner{

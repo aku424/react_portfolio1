@@ -325,6 +325,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .sectionTopTitle {
+    font-size: 18px;
+  }
+}
+
 .sectionTopText {
   color: #FFFFFF;
   line-height: 2;
@@ -338,6 +344,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .sectionTopText {
+    font-size: 12px;
+  }
+}
+
 .topGameText {
   text-align: center;
   font-weight: bold;
@@ -347,6 +359,12 @@ a:hover {
 @media screen and (max-width: 768px) {
   .topGameText {
     font-weight: 16px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .topGameText {
+    font-size: 14px;
   }
 }
 
@@ -366,6 +384,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .gameTitle {
+    font-size: 18px;
+  }
+}
+
 .gameText {
   font-weight: bold;
   text-align: center;
@@ -376,6 +400,12 @@ a:hover {
 @media screen and (max-width: 768px) {
   .gameText {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .gameText {
+    font-size: 14px;
   }
 }
 

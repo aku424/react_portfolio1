@@ -6,9 +6,6 @@ import App from './App';
 // import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 
-
-
-
 ReactDOM.render(
   <React.StrictMode>
     <App/>
