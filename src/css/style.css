@@ -413,6 +413,11 @@ a:hover {
   }
 }
 
+.gameText2 {
+  text-align: center;
+  font-size: 12px;
+}
+
 .gameText {
   font-weight: bold;
   text-align: center;

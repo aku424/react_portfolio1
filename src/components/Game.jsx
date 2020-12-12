@@ -72,6 +72,7 @@ class Game extends React.Component{
             <>
                 <h3 className = "gameTitle">世界のタクト</h3>
                 <p className = "gameText">〜 今は無き世界のオモローver.タクト 〜</p>
+                <p className="gameText2"> ＊画像の切り替わりに1秒程お時間がかかる可能性がありますので、ご了承ください。</p>
                 <Number
                     count = {this.state.count}
                     add ={()=>{this.addCount()}}
