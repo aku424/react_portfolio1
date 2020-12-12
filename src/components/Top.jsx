@@ -1,7 +1,7 @@
 import React from 'react';
 import Game from './Game';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import top from '../img/top.jpeg';
+import top from '../img/top.jpg';
 
 const Top = (props)=>{
     return(

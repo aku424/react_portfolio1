@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import about from '../img/about.jpg';
-import prof from '../img/prof.jpeg';
+import prof from '../img/prof.jpg';
 import js from '../img/js.png';
 import html from '../img/html.png';
 import ruby from '../img/ruby.png';
