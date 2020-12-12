@@ -5,16 +5,19 @@ import Image from './Image';
 const Number = (props) => {
     console.log(props.count);
     console.log(props.isFinished);
-    
+
     return(
         <>
         <div className="gameInner">
             <Image
                 count = {props.count}
                 isSmile = {props.isSmile}
+                number = {props.number}
             />
             {(() => {
-                    if (props.isFinished === true && props.count >40) {
+                    if ( props.count === 0){
+                        return <p className="count smileCount">オモロー</p>
+                    }else if (props.isFinished === true && props.count >40) {
                         return <p></p>
                     }else if(props.isSmile === true){
                         return <p className = "count smileCount">{props.count}</p>

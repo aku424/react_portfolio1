@@ -307,6 +307,21 @@ main{
         font-size: 18px;
     }
 }
+.gameImageBox{
+    img{
+        width: 100%;
+        height: auto;
+    }
+    margin: 0 auto;
+    @include mq(md){
+        width: 600px;
+        height: 450px;
+    }
+    @include mq(sm){
+        width: 330px;
+        height:247.5px;
+    }
+}
 .gameText{
     font-weight: bold;
     text-align: center;

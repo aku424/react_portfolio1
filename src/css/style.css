@@ -390,6 +390,29 @@ a:hover {
   }
 }
 
+.gameImageBox {
+  margin: 0 auto;
+}
+
+.gameImageBox img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 769px) {
+  .gameImageBox {
+    width: 600px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gameImageBox {
+    width: 330px;
+    height: 247.5px;
+  }
+}
+
 .gameText {
   font-weight: bold;
   text-align: center;
