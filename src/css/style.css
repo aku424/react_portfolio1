@@ -783,14 +783,19 @@ a:hover {
 }
 
 .moviesBox {
-  height: 450px;
-  width: 700px !important;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+  .moviesBox {
+    height: 450px;
+    width: 700px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .moviesBox {
-    width: 330px;
+    width: 330px !important;
     height: 247.5px;
   }
 }
