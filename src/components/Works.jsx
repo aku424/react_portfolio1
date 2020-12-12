@@ -71,7 +71,7 @@ const Works = (props)=>{
                             </div>
                             <h3 className = "workItemTitle">Reactでのポートフォリオサイト</h3>
                             <p className="workItemLanguage">使用言語：Javascript、React、HTML&CSS</p>
-                            <p className="workItemText">Reactを学習しつ作成いたしました。Reactの考え方や基本的使い方の理解につながりました。</p>
+                            <p className="workItemText">Reactを学習しつつ作成いたしました。Reactの考え方や基本的な使い方の理解につながりました。</p>
                         </article>
                     </Link>
                     <Link to = "/movies/ruby" className = "workItemLink">

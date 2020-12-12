@@ -91,7 +91,7 @@ a:hover {
 
 @media screen and (min-width: 769px) {
   main {
-    padding-top: 145px;
+    padding-top: 106px;
   }
 }
 
@@ -181,7 +181,7 @@ a:hover {
 
 @media screen {
   .header {
-    padding: 40px;
+    padding: 20px;
     top: 0;
     left: 0;
     right: 0;
@@ -194,7 +194,7 @@ a:hover {
     bottom: 0;
     right: 0;
     left: 0;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -786,6 +786,13 @@ a:hover {
   height: 450px;
   width: 700px !important;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .moviesBox {
+    width: 330px;
+    height: 247.5px;
+  }
 }
 
 .moviesBox div {
