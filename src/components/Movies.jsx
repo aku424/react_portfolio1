@@ -4,16 +4,14 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import ReactPlayer from 'react-player'
 import Movie from '../img/movies.jpg';
 
-<div className = "nexPageBox">
-    <Link className="nexPage" to="/contact/">Next page is contact<span></span></Link>
-</div>
+
 
 const Movies = ()=>{
     return(
         <>  
             <section className = "container works">
                 <div className="sectionTitleBox movies" style = {{backgroundImage:`url(${Movie})`}}>
-                    <div className="nexPageBox">
+                    <div className="sectionBg">
                         <h2 className = "sectionTitle">movies</h2>
                     </div>
                 </div>
@@ -83,4 +81,4 @@ const Ruby = ()=>{
         </>
     )
 }
-        export default Movies;
+export default Movies;
