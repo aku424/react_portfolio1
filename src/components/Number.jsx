@@ -5,7 +5,6 @@ import Image from './Image';
 const Number = (props) => {
     console.log(props.count);
     console.log(props.isFinished);
-
     return(
         <>
         <div className="gameInner">

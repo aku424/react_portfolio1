@@ -36,6 +36,9 @@ const LP1 = ()=>{
     return(
         <>
             <h3 className = "subTitle">アクセサリーサイトのLP<span></span></h3>
+            <div className="portLinkArea">
+                <a href="https://aku424.github.io/sobolon/" className="portLink">サイトリンクはこちら</a>
+            </div>
             <div className="moviesBox">
                 <ReactPlayer url = {lp1} playing alt = "アクセサリーLPサイトの動画"/> 
             </div>
@@ -47,6 +50,9 @@ const LP2 = ()=>{
     return(
         <>
             <h3 className = "subTitle">LPサイト<span></span></h3>
+            <div className="portLinkArea">
+                <a href="https://aku424.github.io/middle1/" className="portLink">サイトリンクはこちら</a>
+            </div>
             <div className="moviesBox">
                 <ReactPlayer url = {lp2} playing alt = "LPサイトの動画"/> 
             </div>
@@ -58,6 +64,9 @@ const WP = ()=>{
     return(
         <>
             <h3 className = "subTitle">wordpress独自テーマ１<span></span></h3>
+            {/* <div className="portLinkArea">
+                <a href="" className="portLink">サイトリンクはこちら</a>
+            </div> */}
             <div className="moviesBox">
                 <ReactPlayer url = {wp} playing alt = "wordpress独自テーマの動画"/> 
             </div>
@@ -69,6 +78,9 @@ const Ruby = ()=>{
     return(
         <>
             <h3 className = "subTitle">簡単なSNSアプリ<span></span></h3>
+            {/* <div className="portLinkArea">
+                <a href="" className="portLink">サイトリンクはこちら</a>
+            </div> */}
             <div className="moviesBox">
                 <ReactPlayer url = {ruby} playing alt = "簡単なSNSアプリの動画"/> 
             </div>
