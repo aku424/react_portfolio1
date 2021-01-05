@@ -782,6 +782,11 @@ a:hover {
   background-position: bottom;
 }
 
+.linkBox {
+  margin-bottom: 60px;
+  text-align-last: left;
+}
+
 .moviesBox {
   margin: 0 auto;
 }

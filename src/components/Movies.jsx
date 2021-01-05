@@ -4,14 +4,16 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import ReactPlayer from 'react-player'
 import Movie from '../img/movies.jpg';
 
-
+<div className = "nexPageBox">
+    <Link className="nexPage" to="/contact/">Next page is contact<span></span></Link>
+</div>
 
 const Movies = ()=>{
     return(
         <>  
             <section className = "container works">
                 <div className="sectionTitleBox movies" style = {{backgroundImage:`url(${Movie})`}}>
-                    <div className="sectionBg">
+                    <div className="nexPageBox">
                         <h2 className = "sectionTitle">movies</h2>
                     </div>
                 </div>
@@ -36,8 +38,8 @@ const LP1 = ()=>{
     return(
         <>
             <h3 className = "subTitle">アクセサリーサイトのLP<span></span></h3>
-            <div className="portLinkArea">
-                <a href="https://aku424.github.io/sobolon/" className="portLink">サイトリンクはこちら</a>
+            <div className="nexPageBox linkBox">
+                <a href="https://aku424.github.io/sobolon/" className="nexPage">サイトリンクはこちら<span></span></a>
             </div>
             <div className="moviesBox">
                 <ReactPlayer url = {lp1} playing alt = "アクセサリーLPサイトの動画"/> 
@@ -50,8 +52,8 @@ const LP2 = ()=>{
     return(
         <>
             <h3 className = "subTitle">LPサイト<span></span></h3>
-            <div className="portLinkArea">
-                <a href="https://aku424.github.io/middle1/" className="portLink">サイトリンクはこちら</a>
+            <div className="nexPageBox linkBox">
+                <a href="https://aku424.github.io/middle1/" className="nexPage">サイトリンクはこちら<span></span></a>
             </div>
             <div className="moviesBox">
                 <ReactPlayer url = {lp2} playing alt = "LPサイトの動画"/> 
@@ -64,9 +66,6 @@ const WP = ()=>{
     return(
         <>
             <h3 className = "subTitle">wordpress独自テーマ１<span></span></h3>
-            {/* <div className="portLinkArea">
-                <a href="" className="portLink">サイトリンクはこちら</a>
-            </div> */}
             <div className="moviesBox">
                 <ReactPlayer url = {wp} playing alt = "wordpress独自テーマの動画"/> 
             </div>
@@ -78,9 +77,6 @@ const Ruby = ()=>{
     return(
         <>
             <h3 className = "subTitle">簡単なSNSアプリ<span></span></h3>
-            {/* <div className="portLinkArea">
-                <a href="" className="portLink">サイトリンクはこちら</a>
-            </div> */}
             <div className="moviesBox">
                 <ReactPlayer url = {ruby} playing alt = "簡単なSNSアプリの動画"/> 
             </div>
