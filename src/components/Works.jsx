@@ -6,6 +6,7 @@ import LP1 from '../img/LP1.png';
 import LP2 from '../img/LP2.png';
 import WP from '../img/WPSite.png';
 import Ruby from '../img/RubyApp.png';
+import Mahabharata from '../img/mahabharata.png';
 import ReactSite from '../img/react.png';
 ///リンク
 
@@ -24,6 +25,16 @@ const Works = (props)=>{
                 <p className="workSubText">※コンテンツをクリックしていただけると動画ページに移動します。<br/>
                 ※音声はありません。</p>
                 <div className = "worksLIst">
+                    <Link to ="/movies/mahabharata/" className = "workItemLink">
+                        <article className="workItem">
+                            <div className="workItemImg">
+                                <img src={Mahabharata} alt=""/>
+                            </div>
+                            <h3 className = "workItemTitle">舞台イベント【マハーバーラタ】のイベントサイト</h3>
+                            <p className="workItemLanguage">使用言語：HTML&CSS、Javascript(JQuery)、PHP、wordpress</p>
+                            <p className="workItemText">デザインカンプからのコーディングをしました。実案件の制作物を模写コーディングしました。1から独自のテーマを作りました。</p>
+                        </article>
+                    </Link>
                     <Link to ="/movies/lp1/" className = "workItemLink">
                         <article className="workItem">
                             <div className="workItemImg">

@@ -18,6 +18,7 @@ const Movies = ()=>{
                     <div className="inner">
                         <Router>
                         {/* 挿入されるコンポーネント */}
+                            <Route path="/movies/mahabharata" exact component={Mahabharata} />
                             <Route path="/movies/lp1" exact component={LP1} />
                             <Route path="/movies/lp2" exact component={LP2} />
                             <Route path="/movies/wp" exact component={WP} />
@@ -77,6 +78,20 @@ const Ruby = ()=>{
             <h3 className = "subTitle">簡単なSNSアプリ<span></span></h3>
             <div className="moviesBox">
                 <ReactPlayer url = {ruby} playing alt = "簡単なSNSアプリの動画"/> 
+            </div>
+        </>
+    )
+}
+const Mahabharata = ()=>{
+    const mahabharata = "https://www.youtube.com/watch?v=4Ps1PQLC34k&feature=youtu.be";
+    return(
+        <>
+            <h3 className = "subTitle">舞台イベント【マハーバーラタ】のイベントサイト<span></span></h3>
+            <div className="nexPageBox linkBox">
+                <a href="http://taaatooo.xsrv.jp/mahabharata/" className="nexPage">サイトリンクはこちら<span></span></a>
+            </div>
+            <div className="moviesBox">
+                <ReactPlayer url = {mahabharata} playing alt = "舞台イベント【マハーバーラタ】のイベントサイト"/> 
             </div>
         </>
     )
