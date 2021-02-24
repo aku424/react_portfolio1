@@ -61,6 +61,7 @@ const History = (props)=>{
                         </div>
                     </dl>
                 </div>
+                
                 <div className = "nexPageBox">
                     <Link className="nexPage" to="/contact/">Next page is contact<span></span></Link>
                 </div>
