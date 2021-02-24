@@ -96,4 +96,5 @@ const Mahabharata = ()=>{
         </>
     )
 }
+
 export default Movies;
