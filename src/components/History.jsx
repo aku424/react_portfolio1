@@ -55,9 +55,14 @@ const History = (props)=>{
                             <dd className = "historyText">Javascript、Reactの学習、当サイト作成開始</dd>
                         </div>
                         <div className="historyItem">
-                            <span className = "historyMark arrow"></span>
-                            <dt className = "historyDate">2020年 現在</dt>
+                            <span className = "historyMark">●</span>
+                            <dt className = "historyDate">2020年 1月</dt>
                             <dd className = "historyText">Javascript、Reactの学習に専念</dd>
+                        </div>
+                        <div className="historyItem">
+                            <span className = "historyMark arrow"></span>
+                            <dt className = "historyDate">2021年 現在</dt>
+                            <dd className = "historyText">wordpressの学習に専念</dd>
                         </div>
                     </dl>
                 </div>
