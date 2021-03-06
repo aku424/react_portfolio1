@@ -605,6 +605,18 @@ main{
     width: 100%;
     
 }
+.passBox{
+    text-align: center;
+}
+.passBox__txt{
+    line-height: 1.7;
+    @include mq(sm){
+        font-size: 12px;
+    }
+}
+.passBox--info{
+    font-weight: bold;
+}
 /*====================================================================
                     history
 ====================================================================*/

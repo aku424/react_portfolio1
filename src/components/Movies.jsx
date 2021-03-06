@@ -87,6 +87,12 @@ const Mahabharata = ()=>{
     return(
         <>
             <h3 className = "subTitle">舞台イベント【マハーバーラタ】のイベントサイト<span></span></h3>
+            <div className="passBox">
+                <p className="passBox__txt">以下のIDとpasswordをご利用ください。</p>
+                <p className="passBox__txt passBox--info">ID：user</p>
+                <p className="passBox__txt passBox--info">password：password</p>
+            </div>
+
             <div className="nexPageBox linkBox">
                 <a href="http://taaatooo.xsrv.jp/mahabharata/" className="nexPage">サイトリンクはこちら<span></span></a>
             </div>
